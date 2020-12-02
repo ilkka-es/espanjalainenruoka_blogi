@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: `http://espanjalainenruoka.com`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

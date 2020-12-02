@@ -4,6 +4,9 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Hero from "../components/hero"
+import Feature from "../components/feature"
+
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -25,26 +28,29 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
+      <SEO title="Espanjalainen ruoka" />
+      <Hero />
+      <Feature />
+      
+      <div className="bg-gray-100 border-t border-white">
+      <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <li key={post.fields.slug}>
+            <div className="mb-12 sm:px-0 bg-white shadow overflow-hidden sm:rounded-lg">
               <article
-                className="post-list-item"
+              className="p-6"
+                key={post.fields.slug}
                 itemScope
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h2>
+                  <h2 className="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-2xl">
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
                 </header>
                 <section>
                   <p
@@ -55,10 +61,14 @@ const BlogIndex = ({ data, location }) => {
                   />
                 </section>
               </article>
-            </li>
+              
+            </div>
           )
         })}
-      </ol>
+        </div>
+        </div>
+        
+      
     </Layout>
   )
 }
