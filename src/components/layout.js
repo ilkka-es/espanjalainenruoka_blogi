@@ -13,21 +13,23 @@ const Layout = ({ location, title, children }) => {
       </h1>
     ) */
   } else {
-    header = (
+  /*   header = (
       <Link className="header-link-home" to="/">
         {title}
       </Link>
-    )
+    ) */
   }
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
+      <footer className="bg-gray-800 text-gray-300">
+        <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        © {new Date().getFullYear()} Madridissa, ❤️ 
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <a href="https://www.espanjalainenruoka.com">Espanjalainen ruoka</a>
+        </div>
       </footer>
     </div>
   )

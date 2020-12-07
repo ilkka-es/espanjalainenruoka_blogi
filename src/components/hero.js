@@ -31,7 +31,7 @@ function Hero() {
                 Sukella makumatkalle Espanjalaisen keittiön ja ruokakulttuurin syvyyksiin. Löydä uusia mielenkiintoisia viinejä sekä muita juomia. Lue ajankohtaisia juttuja elämästä Espanjassa. <span className="font-bold">¡Bienvenidos!</span>
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
+                {/* <div className="rounded-md shadow">
                   <a
                     href="google.com"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10"
@@ -46,7 +46,7 @@ function Hero() {
                   >
                     Elamaa espanjassa
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </main>

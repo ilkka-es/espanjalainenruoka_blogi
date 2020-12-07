@@ -1,0 +1,30 @@
+.blog-post {
+    @apply text-gray-700 leading-relaxed;
+}
+
+.blog-post p {
+    @apply mb-4
+}
+
+.blog-post ul {
+    @apply bg-gray-100 list-disc list-inside p-4 rounded-lg;
+}
+
+.blog-post ul li  {
+    @apply my-2 ;
+}
+
+.blog-post h2 {
+    @apply text-2xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-2xl my-4
+}
+
+.blog-post img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.blog-post .gatsby-resp-image-wrapper {
+    width: 100%;
+    max-width: 100% !important;
+}
+

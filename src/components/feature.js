@@ -9,7 +9,7 @@ function Feature() {
             <div className="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center">
               <img
                 className="absolute h-full w-full object-cover"
-                src="https://stripe.com/img/v3/payments/overview/photos/slack.jpg"
+                src="./static/f167b4f82607b6dc3a12c30432946e3d/14b42/sangria.jpg"
                 alt=""
               />
               <div className="absolute inset-0 bg-yellow-500 opacity-50" />
@@ -36,7 +36,7 @@ function Feature() {
                 </p>
                 <p className="mt-6">
                   <a
-                    href="google.com"
+                    href="./sangria-ohje"
                     className="font-medium text-red-600 hover:text-red-900"
                   >
                     Katso sangria resepti &rarr;
