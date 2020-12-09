@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import CookieConsent from 'react-cookie-consent';
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -31,6 +32,13 @@ const Layout = ({ location, title, children }) => {
         <a href="https://www.espanjalainenruoka.com">Espanjalainen ruoka</a>
         </div>
       </footer>
+      <CookieConsent
+          location="bottom"
+          buttonText="Hyväksyn evästeet"
+          declineButtonText="Decline"
+          cookieName="gatsby-gdpr-google-analytics">
+Käytämme verkkopalvelussamme Google Analyticsiä mittaamaan verkkopalveluidemme käyttöä. 
+</CookieConsent>
     </div>
   )
 }
