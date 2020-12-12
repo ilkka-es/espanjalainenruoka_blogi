@@ -1,7 +1,7 @@
 ---
 title: Sangria ohje
 date: "2015-05-01T22:12:03.284Z"
-description: "Netin paras sangria ohje"
+description: "Sangria taitaa olla tunnetuin espanjalainen juoma, -aina kun saan vieraita suomesta, ja varsinkin jos matka on heille ensikosketus espanjaan, he haluavat maistaa sangriaa. Paras paikka juoda sangriaa on tietysti jossain mukavalla terassilla, auringon paisteessa; mutta tottahan toki sangriaa voi tehdä myös kotona, ja siitä tulee vähintäänkin yhtä hyvää kuin tavernoissa. Tässä oikea, ja ehkä paras sangria ohje, mitä voit löytää!"
 banner: "./sangria.jpg"
 ---
 
