@@ -17,14 +17,14 @@ function Nav() {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
-                  href="./"
+                  href="../"
                   className="px-3 py-2 rounded-md text-sm font-medium text-yellow-900 bg-yellow-400"
                 >
                   Etusivu
                 </a>
 
                 <a
-                  href="./sangria-ohje"
+                  href="../reseptit"
                   className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700"
                 >
                   Reseptit

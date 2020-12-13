@@ -74,7 +74,8 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         </div>
       </article>
-      <nav className="blog-post-nav">
+
+      {/* <nav className="">
         <ul
           style={{
             display: `flex`,
@@ -99,7 +100,7 @@ const BlogPostTemplate = ({ data, location }) => {
             )}
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </Layout>
   )
 }

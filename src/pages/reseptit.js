@@ -2,15 +2,13 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../components/hero"
-import Feature from "../components/feature"
+
 import Nav from "../components/nav"
 
 
-const BlogIndex = ({ data, location }) => {
+const Reseptit = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
@@ -18,8 +16,8 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
+        <SEO title="Reseptit" />
+        
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
@@ -31,24 +29,21 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Espanjalainen ruoka" />
+      <SEO title="Reseptit" />
       <Nav />
-      <Hero />
-      <Feature />
       
       <div className="bg-gray-100 border-t border-white">
       <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-          const category = post.frontmatter.category || "ei ole"   
-          //let featuredImgFluid = post.frontmatter.banner.childImageSharp.fluid
+          const title = post.frontmatter.title || post.fields.slug   
+          const category = post.frontmatter.category
+          console.log(category);
 
+          if (category === "reseptit") {
           return (
-            <div key={post.frontmatter.date} className="flex mb-12 sm:px-0 bg-white shadow overflow-hidden sm:rounded-lg h-48">
-               <div className="flex-none w-96 relative">
-               <Link to={post.fields.slug} itemProp="url">
-                <img src={post.frontmatter.banner.childImageSharp.fluid.src} alt="" className="absolute inset-0 w-full h-full object-cover" />
-                </Link>
+            <div class="flex mb-12 sm:px-0 bg-white shadow overflow-hidden sm:rounded-lg">
+               <div class="flex-none w-48 relative">
+                <img src={post.frontmatter.banner.childImageSharp.fluid.src} alt="" class="absolute inset-0 w-full h-full object-cover" />
               </div>
             <div className="flex-auto">
               <article
@@ -58,9 +53,6 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                <h2 className="text-base text-red-600 font-semibold tracking-wide uppercase">
-                  {category}
-                </h2>
                   <h2 className="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-2xl">
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
@@ -81,7 +73,7 @@ const BlogIndex = ({ data, location }) => {
               
             </div>
             </div>
-          )
+          )}
         })}
         </div>
         </div>
@@ -91,7 +83,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default Reseptit
 
 export const pageQuery = graphql`
   query {
