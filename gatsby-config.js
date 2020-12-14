@@ -7,6 +7,16 @@ module.exports = {
     },
     description: `Espanjalainen ruoka`,
     siteUrl: `http://espanjalainenruoka.com`,
+    menuLinks: [
+      {
+        name: 'Etusivu',
+        link: '/',
+      },
+      {
+        name: 'Reseptit',
+        link: '/reseptit',
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -73,10 +83,10 @@ module.exports = {
         googleAnalytics: {
           trackingId: 'G-3JC4V8KYR6',
           // Setting this parameter is optional
-          anonymize: true
+          anonymize: true,
         },
         // Defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production', 'development']
+        environments: ['production', 'development'],
       },
     },
     {
@@ -84,11 +94,11 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-3JC4V8KYR6", // Google Analytics / GA
-          //"AW-CONVERSION_ID", // Google Ads / Adwords / AW
-          //"DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+          'G-3JC4V8KYR6', // Google Analytics / GA
+          // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
+          // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
       },
-    }
+    },
   ],
 }
