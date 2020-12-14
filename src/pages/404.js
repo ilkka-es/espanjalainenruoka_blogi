@@ -23,6 +23,10 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        menuLinks {
+          name
+          link
+        }
       }
     }
   }
