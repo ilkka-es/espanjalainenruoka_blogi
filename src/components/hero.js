@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 
 function Hero() {
   return (
@@ -28,7 +29,10 @@ function Hero() {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Sukella makumatkalle Espanjalaisen keittiön ja ruokakulttuurin syvyyksiin. Löydä uusia mielenkiintoisia viinejä sekä muita juomia. Lue ajankohtaisia juttuja elämästä Espanjassa. <span className="font-bold">¡Bienvenidos!</span>
+                Sukella makumatkalle Espanjalaisen keittiön ja ruokakulttuurin
+                syvyyksiin. Löydä uusia mielenkiintoisia viinejä sekä muita
+                juomia. Lue ajankohtaisia juttuja elämästä Espanjassa.{' '}
+                <span className="font-bold">¡Bienvenidos!</span>
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 {/* <div className="rounded-md shadow">
@@ -52,15 +56,16 @@ function Hero() {
           </main>
         </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src="https://source.unsplash.com/Z95viY3WaZs/2580"
-          alt=""
+      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 hidden md:block lg:block">
+        <StaticImage
+          src="./paella.jpg"
+          alt="Nuori mies valmistaa paellaa Espanjassa"
+          placeholder="blurred"
+          className="h-56 w-full object-cover sm:h-24 md:h-96 lg:w-full lg:h-full"
         />
       </div>
     </div>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

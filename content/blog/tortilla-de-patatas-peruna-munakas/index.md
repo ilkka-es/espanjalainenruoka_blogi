@@ -1,7 +1,7 @@
 ---
 title: Tortilla de patatas perunamunakas
 category: "reseptit"
-date: "2020-12-12T22:12:03.284Z"
+date: "2020-12-12"
 description: "Espanjalainen perunamunakas, Tortilla de patatas, vaatii vain muutaman raaka-aineen, mutta sen valmistamiseen tarvitaan taitoa ja rakkautta ruokaa kohtaan, muuten se ei onnistu. Jokaisella espanjalaisella perheellä on oma twistinsä tortillan tekoon, ja usein espanjassa järjestetäänkin tortillan teko kilpailuja. Tässä resepti perunamunakkaan tekoon, jolla varmasti onnistut."
 banner: "./tortilla.jpg"
 ---

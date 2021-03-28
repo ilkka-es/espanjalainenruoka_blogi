@@ -1,7 +1,7 @@
 ---
 title: Suosituimmat tapakset alueittain
 category: "reseptit"
-date: "2020-28-12T219:12:03.284Z"
+date: "2020-12-28"
 description: "Espanjan jokaisella alueella on omanlaisensa tapakset. Tässä suuntaa-antava opas, mitä missäkinpäin Espanjaa kannattaa tilata."
 banner: "./tapas2.jpg"
 ---
